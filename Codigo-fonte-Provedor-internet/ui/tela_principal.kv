@@ -1,0 +1,54 @@
+<TelaPrincipal>:
+    canvas.before:
+        Color:
+            rgba: 0.2, 0.4, 0.7, 1  # Fundo azul escuro
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 40
+        spacing: 30
+
+        Label:
+            text: "Painel do Provedor"
+            font_size: 32
+            size_hint_y: None
+            height: 60
+            bold: True
+            color: 1,1,1,1
+
+        GridLayout:
+            cols: 1
+            size_hint: (None, None)
+            size: 280, 200
+            pos_hint: {'center_x': 0.5}
+            spacing: 20
+
+            Button:
+                text: "Cadastrar Cliente"
+                size_hint: (1, None)
+                height: 50
+                font_size: 18
+                background_color: 0.1, 0.6, 0.9, 1
+                background_normal: ''
+                on_press: app.root.current = 'cadastro'
+
+            Button:
+                text: "Clientes Conectados"
+                size_hint: (1, None)
+                height: 50
+                font_size: 18
+                background_color: 0.1, 0.7, 0.4, 1
+                background_normal: ''
+                on_press: app.root.current = 'conectados'
+
+            Button:
+                text: "Sair"
+                size_hint: (1, None)
+                height: 50
+                font_size: 18
+                background_color: 0.9, 0.2, 0.2, 1
+                background_normal: ''
+                on_press: app.stop()

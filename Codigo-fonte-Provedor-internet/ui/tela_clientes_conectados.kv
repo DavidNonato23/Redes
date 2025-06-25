@@ -1,0 +1,37 @@
+<TelaClientesConectados>:
+    canvas.before:
+        Color:
+            rgba: 0.2, 0.4, 0.7, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        spacing: 15
+
+        Label:
+            text: "Clientes Conectados"
+            font_size: 28
+            size_hint_y: None
+            height: 50
+            color: 1,1,1,1
+
+        ScrollView:
+            do_scroll_x: False
+
+            Label:
+                id: lista_clientes
+                text: root.resultado or "Nenhum cliente conectado."
+                font_size: 16
+                text_size: self.width, None
+                size_hint_y: None
+                height: self.texture_size[1]
+                color: 1,1,1,1
+
+        Button:
+            size_hint_y: None
+            height: 50
+            text: "Voltar"
+            on_press: app.root.current = 'principal'
