@@ -30,14 +30,13 @@ Este projeto é um **Painel de Gerenciamento de Provedor de Internet** desenvolv
 
 ## Como Rodar o Projeto (Desenvolvimento) ▶️
 
-Para rodar o projeto a partir do código-fonte, siga os passos abaixo:
+Se este projeto está dentro de uma pasta maior ou não possui um repositório Git próprio, você pode baixá-lo diretamente do GitHub e configurá-lo:
 
-1.  **Clone o repositório:**
-    ```bash
-    git clone [LINK_DO_SEU_REPOSITORIO_GITHUB]
-    cd [NOME_DA_PASTA_DO_SEU_REPOSITORIO]
-    ```
-    *(**Atenção**: Substitua `[LINK_DO_SEU_REPOSITORIO_GITHUB]` pelo link real do seu repositório no GitHub, e `[NOME_DA_PASTA_DO_SEU_REPOSITORIO]` pelo nome da pasta que será criada após o clone.)*
+1.  **Baixe o Projeto:**
+    * Vá para a página do repositório no GitHub onde este projeto está localizado.
+    * Clique no botão verde **`<> Code`** e depois em **`Download ZIP`**.
+    * Descompacte o arquivo ZIP em um local de sua preferência no computador.
+    * Navegue até a pasta `Painel-Provedor-internet` (ou o nome da pasta raiz do seu projeto) dentro do conteúdo descompactado.
 
 2.  **Crie e ative um ambiente virtual (recomendado):**
     ```bash
@@ -93,41 +92,6 @@ Como o executável pode ser grande, não o versionamos diretamente no Git. Em ve
 
 ---
 
-## Estrutura do Projeto (Códigos-Fonte) 📂
+## Estrutura do Projeto (Códigos-Source) 📂
 
 Abaixo está a estrutura principal dos arquivos e pastas que compõem o código-fonte deste projeto:
-
-````
-
-.
-├── main.py
-├── setup.py
-├── tela\_clientes\_conectados.py
-├── backup\_salvacity.json
-├── salvacity\_version.json
-├── backend/
-│   └── mikrotik\_api.py
-│   └── (outros módulos de backend)
-└── ui/
-├── tela\_principal.py
-├── (outros módulos de tela .py)
-├── (arquivos .kv)
-└── interface\_do\_usuario/
-└── (arquivos e módulos da interface de usuário)
-
-```
-
----
-
-## Contribuição 🤝
-
-Sinta-se à vontade para explorar o código, relatar problemas ou sugerir melhorias.
-
----
-
-## Autor 👤
-
-* **[DavidNonato/DavidNonato23]** - www.linkedin.com/in/david-nonato-49913032b]
-
----
-```
