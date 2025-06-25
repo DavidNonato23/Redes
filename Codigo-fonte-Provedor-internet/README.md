@@ -1,10 +1,3 @@
-Okay, David\! Entendi. Você quer o `README.md` completo, formatado em um bloco de código Markdown para facilitar a cópia para o seu GitHub e LinkedIn.
-
-Aqui está ele, com as seções para você preencher com suas informações:
-
------
-
-````markdown
 # Painel de Gerenciamento de Provedor de Internet 🚀
 
 ---
